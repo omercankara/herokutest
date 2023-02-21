@@ -10,15 +10,13 @@ app.use(express.json())
 
 const db = require("./data/db")
 app.get("/", (req, res) => {
-    res.send("Body test")
+    res.send("SON test")
 })
 
 app.get("/test", async (req, res) => {
-
     try {
         let result = await db.execute("SELECT * FROM user")
         res.json(result[0])
-
     } catch (err) {
         console.log(err);
     }
