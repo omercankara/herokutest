@@ -10,7 +10,7 @@ app.use(express.json())
 
 const db = require("./data/db")
 app.get("/", (req, res) => {
-    res.send("SON test")
+    res.send("test test")
 })
 
 app.get("/test", async (req, res) => {
