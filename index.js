@@ -5,7 +5,7 @@ app.use(express.json())
 
 
 app.get("/",(req,res) =>{
-    res.send("test")
+    res.send("get")
 })
 
 app.listen(process.env.PORT || 5000)
